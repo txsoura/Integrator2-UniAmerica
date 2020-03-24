@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #E6E448;
+        }
+        
+        #login-box {
+            background-color: #FFE636;
+            width: 400px;
+            height: 260px;
+            margin: 140px auto 0px;
+            border-radius: 5px;
+        }
+        
+        #login-box-interna {
+            background-color: whitesmoke;
+            width: 380px;
+            height: 240px;
+            margin: 10px;
+            border-radius: 5px;
+            position: absolute;
+            box-shadow: 0px 0px 10px black;
+            overflow: hidden;
+        }
+        
+        #login-box-label {
+            background-color: #EAEAEA;
+            color: #555555;
+            height: 45px;
+            text-align: center;
+            font: bold 14px/45px sans-serif;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom: 1px solid #C5C5C5;
+            box-shadow: 1px 0px 3px gray;
+            text-shadow: 1px 0px 1px white;
+        }
+        
+        .input-div {
+            margin: 24px;
+            padding: 3px;
+            background-color: #EAEAEA;
+            border-radius: 5px;
+        }
+        
+        .input-div input {
+            width: 325px;
+            height: 25;
+            font: normal 15px sans-serif;
+            border-radius: 5px;
+            border: 1px solid;
+            outline: none
+        }
+        
+        .input-div:hover {
+            background-color: #FFFD76;
+        }
+        
+        .input-div:hover input {
+            border-color: white;
+        }
+        
+        #input-senha {
+            margin-top: -10px;
+        }
+        
+        #botoes {
+            width: 325px;
+            margin: 24px;
+        }
+        
+        #botao1 {
+            float: right;
+            padding: 5px;
+            margin-top: -30px;
+            background-color: #FFFEAB;
+            font: bold 12px sans-serif;
+            border-radius: 20px;
+            color: black
+        }
+        
+        #botao1:hover {
+            background: yellow;
+            cursor: pointer;
+        }
+        
+        #botao2 {
+            float: left;
+            padding: 5px;
+            margin-top: -30px;
+            background-color: #FFFEAB;
+            font: bold 12px sans-serif;
+            border-radius: 20px;
+            color: black
+        }
+        
+        #botao2:hover {
+            background: yellow;
+            cursor: pointer;
+        }
+        
+        #botao3 {
+            text-align: center;
+            margin-top: 70px;
+            padding: 5px;
+            background-color: #FFFEAB;
+            font: bold 12px sans-serif;
+            border-radius: 20px;
+            color: black
+        }
+        
+        #botao3:hover {
+            background: yellow;
+            cursor: pointer;
+        }
+        
+        #lembrar-senha {
+            text-align: center;
+            margin-top: -90px;
+            padding: 2px;
+            font: bold 12px sans-serif;
+            color: black
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login-box">
+        <div id="login-box-interna">
+            <div id="login-box-label">Login</div>
+            <div class="input-div" id="input-usuario">
+                <input type="text" value="CPF ou CNPJ">
+            </div>
+            <div class="input-div" id="input-senha">
+                <input type="password" value="Digite-sua-senha">
+            </div>
+            <div id="botoes">
+                <div id="botao1">Login</div>
+                <div id="botao2">Registrar-se</div>
+                <div id="botao3"><b><u>Entrar sem se Registrar</u></b></div>
+                <div id="lembrar-senha"><input type="checkbox" /><b>Lembrar minha senha</b>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
