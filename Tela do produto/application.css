@@ -1,61 +1,60 @@
 body {
-  width: 95%;
-  max-width: 800px;
-  margin: auto;
-
-  font-family: sans-serif;
-  line-height: 1.5;
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+    font-family: sans-serif;
+    line-height: 1.5;
 }
 
-main {
-
-}
-
-.imagem, .texto, .Produto, {
-  margin: 0;
-  text-align: center;
-}
+main {}
 
 .GOLE {
-  text-align: left;
-  }
+    text-align: center;
+}
 
-.mais, .menos {
-  font-family: arial;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+.mais,
+.menos {
+    font-family: arial;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
-.mais-green{
-  background: green;
-  color: #fff;
-  box-shadow: 0 5px 0 #006000;
+
+.mais-green {
+    background: green;
+    color: #fff;
+    box-shadow: 0 5px 0 #006000;
 }
-.mais-green:hover{
-  background: #006000;
-  color: #fff;
-  box-shadow: 0 5px 0 #003f00;
+
+.mais-green:hover {
+    background: #006000;
+    color: #fff;
+    box-shadow: 0 5px 0 #003f00;
 }
-.mais-green:active{
-  position: relative;
-  top:5px;
-  box-shadow: none;
-  }
-.menos-red{
-  background: red;
-  calor: #fff;
-  box-shadow: 0 5px 0 #B40404;
+
+.mais-green:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
 }
-.menos-red:hover{
-  background: #B40404;
-  calor: #fff;
-  box-shadow: 0 5px 0 #8A0808;
+
+.menos-red {
+    background: red;
+    calor: #fff;
+    box-shadow: 0 5px 0 #B40404;
 }
-.menos-red:active{
-  position: relative;
-  top:  5px;
-  box-shadow: none;
+
+.menos-red:hover {
+    background: #B40404;
+    calor: #fff;
+    box-shadow: 0 5px 0 #8A0808;
+}
+
+.menos-red:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
 }
