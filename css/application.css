@@ -1,19 +1,49 @@
 body {
     width: 95%;
-    max-width: 800px;
+    max-width: 2000px;
     margin: auto;
     font-family: sans-serif;
     line-height: 1.5;
 }
-
-main {}
-
-.GOLE {
-    text-align: center;
+.Produto {
+  text-align: center;
 }
-
-.mais,
-.menos {
+.imagem {
+  text-align: center;
+}
+.texto {
+  text-align: center;
+}
+.GOLE {
+    text-align: left;
+}
+.adicionar {
+  position: relative;
+  top: 100px;
+  left: 1000px;
+  font-family: arial;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  margin: 20px;
+}
+.um {
+  position: relative;
+  bottom: 100px;
+  left: 860px;
+  font-family: arial;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  margin: 20px;
+}
+.mais, .menos {
     font-family: arial;
     font-size: 15px;
     text-transform: uppercase;
@@ -21,9 +51,12 @@ main {}
     border: none;
     padding: 10px;
     cursor: pointer;
+    margin: 20px;
 }
 
 .mais-green {
+    position: relative;
+    left: 850px;
     background: green;
     color: #fff;
     box-shadow: 0 5px 0 #006000;
@@ -42,6 +75,8 @@ main {}
 }
 
 .menos-red {
+    position: relative;
+    left: 830px;
     background: red;
     calor: #fff;
     box-shadow: 0 5px 0 #B40404;
