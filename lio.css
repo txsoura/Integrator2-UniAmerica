@@ -1,0 +1,36 @@
+ <style>
+        body {
+            background-image: url(img/pinga.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+        
+        .btn {
+            font-family: arial;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: 700;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        .btn-green {
+            background: green;
+            color: #fff;
+            box-shadow: 0 5px 0 #006000;
+        }
+        
+        .btn-green:hover {
+            background: #006000;
+            color: #fff;
+            box-shadow: 0 5px 0 #006000;
+        }
+        
+        .btn-green:active {
+            position: relative;
+            top: 5px;
+            box-shadow: none;
+        }

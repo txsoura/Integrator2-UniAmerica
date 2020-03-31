@@ -7,13 +7,39 @@ body, ul, li, p {
 
 
 }
+
+body {
+            background-image: url(../img/pinga.jpg);
+            background-attachment: fixed;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-color: #000;
+        }
+
+body{
+	margin-bottom: 100px;
+
+}
 a{
-	text-decoration:white;
+	text-decoration: none;
+	color: black
+}
+
+h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+
+img {
+	max-width: 100%;
+	display:inline-block;
 }
 .header{
-	background: #1d1e20;
+
+	background:orange;
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+    justify-content: space-between;
 	align-items:center;
 	padding: 20px;}
 
@@ -28,6 +54,58 @@ a{
 .menu li a {
 	display: block;
 	padding: 10px;
-	background: gold;
+	background: white;
 }
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.flex> div{
+	flex: 1 1 200px;
+	margin: 10px;
+}
+
+.grid1{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	max-width: 800px;
+	padding: 10px;
+	margin: 0 auto;
+	grid-gap: 20px;
+}
+.grid1 > div:nth-child()(4){
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 100px;
+	align-items: center; 
+}
+
+.grid1>div.anúncio{
+
+	grid-column: 1;
+	grid-row: 2/2
+	border-top: 10px solid tomato;
+	display: block;
+}
+
+@media (max-width: 600px){
+	.grid1{
+		grid-template-columns:repeat(2,1fr);
+}
+
+.grid1>div:nth-child(4){
+	display: block;
+}
+.grid1>div.anúncio{
+	grid-column: auto;
+	grid-row: auto;
+	order: -1;
+ }
+}
+
+
+
 

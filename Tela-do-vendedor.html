@@ -4,88 +4,106 @@
 <head>
     <title>Cadastro do Vendedor</title>
     <meta charset="utf-8">
-    <style>
-        body {
-            background-image: url(img/pinga.jpg);
-            background-attachment: fixed;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-color: #000;
-        }
-        
-        .btn {
-            font-family: arial;
-            font-size: 14px;
-            text-transform: uppercase;
-            font-weight: 700;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-        
-        .btn-green {
-            background: green;
-            color: #fff;
-            box-shadow: 0 5px 0 #006000;
-        }
-        
-        .btn-green:hover {
-            background: #006000;
-            color: #fff;
-            box-shadow: 0 5px 0 #006000;
-        }
-        
-        .btn-green:active {
-            position: relative;
-            top: 5px;
-            box-shadow: none;
-        }
-    </style>
-</head>/
+    <link href="css/Tela-do-vendedor.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
 
 <body>
-    <span>
-    <fieldset>
-    <div>
-<figure>
 
-    <img src ="img/GOLE.png" width="250" height="200"><br>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> GOLE
+        </a>
+    </nav><br><br>
 
-    <h2><figcaption><font color="size"  face="Bukhari Script">Venda Conosco</figcaption></h2><br>
+   <div class="media mt-3" style="width:500px; margin-left:30%; height:25%;>
+      <a class="mr-4" >
+        <img src="img/GOLE.png" class="mr-4" height="150" width="150">
+      </a>
+      <div class="media-body">
+        <h4 class="mt-0">Porque o GOLE faz a diferença</h4>
+        <p>"O entusiasmo é a maior força da alma. Conserva-o e nunca te faltará poder para conseguires o que desejas. Está com sede e não quer sair de casa o GOLE é a tua solução"</p>
+      </div>
+    </div><br>
 
-<h2>CADRASTE-SE</h2>
+    <div class="contaner center_div">
+        <div class="card text-center" style="width:500px; margin-left:30%; height:25%;">
 
-<h3>Email:</h3><br>
-<input type="email" name="email" required placeholder on autocomplete autofocus autosave >
+            <div class="card-header">
+                Cadastre-se
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-10">
+                            <label for="inputEmail4" required autofocus autocomplet placeholder="lio_croons@outlook.com">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
 
-<h3>Senha:</h3>
-<input type="password" name="Senha"><br>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="inputPassword4">Senha</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
 
-<input type="submit" name="sincronize" formaction="sincronize.php" value="sincronize">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="inputAddress">Endereço</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputZip">Cep</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">CNPJ</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Lembrar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-warning" autosave>Entrar</button>
+                </form>
+            </div>
 
-<input type="submit" name="enviar-por-email" formaction="enviar-email.php" value="Facebook/twitter">
+        </div>
 
-</form>
+        <svg class="bi bi-download" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M.5 8a.5.5 0 01.5.5V12a1 1 0 001 1h12a1 1 0 001-1V8.5a.5.5 0 011 0V12a2 2 0 01-2 2H2a2 2 0 01-2-2V8.5A.5.5 0 01.5 8z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M5 7.5a.5.5 0 01.707 0L8 9.793 10.293 7.5a.5.5 0 11.707.707l-2.646 2.647a.5.5 0 01-.708 0L5 8.207A.5.5 0 015 7.5z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M8 1a.5.5 0 01.5.5v8a.5.5 0 01-1 0v-8A.5.5 0 018 1z" clip-rule="evenodd" />
+        </svg>
 
-<h3>Endereço/CEP</h3><br>
-<input type="Endereço/CEP" name="Endereço/CEP"><br>
-<button class="btn btn-green">Endereço/CEP</button>
-<input type="submit" name="btn-enviar" value="Pesquise"><br>
+        appstore:
+        <br>
+        <img src="img/itunes.png" width="100" height="50" alt="Itunes">
+        <br>
+        <a href="https://www.apple.com/br/itunes/" target="_blank"> IOS </a>
+        <br>
+        <img src="img/android.png" width="100" height="50" alt="androind">
+        <br>
+        <a href="https://play.google.com/store?hl=pt_BR" target="_blank">Android </a>
+        <br>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<H3>CNPJ:</H3><br>
-<input type="CNPJ" name="CNPJ"><br><br>
 
-appstore:<br><br>
-
-<img src ="img/itunes.png" width="150" height="50" alt="Itunes" ><br>
-<a href="https://www.apple.com/br/itunes/"target="_blank"> IOS </a><br>
-<img src ="img/android.png" width="150" height="50" alt="androind" ><br>
-<a href="https://play.google.com/store?hl=pt_BR"target="_blank">Android </a><br>
-
-</figure>
-</div>
-</fieldset>
-</span>
 </body>
 
 </html>
