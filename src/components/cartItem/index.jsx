@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Input from 'components/input/index'
 
 export default function Index() {
     return (
@@ -20,10 +21,9 @@ export default function Index() {
                 </div>
                 <div class="col-4 col-sm-4 col-md-4">
                     <div class="quantity">
-                        <input type="button" value="+" class="plus" />
-                        <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
-                            size="4" />
-                        <input type="button" value="-" class="minus" />
+                        <Input type="button" value="+" class="plus" />
+                        <Input name="quantity" type="number" value="1" class="qty" />
+                        <Input type="button" value="-" class="minus" />
                     </div>
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 text-right">
