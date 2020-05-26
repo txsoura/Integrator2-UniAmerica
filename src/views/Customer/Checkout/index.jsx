@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CheckoutItem from 'components/checkoutItem/index'
+import Input from 'components/input/index'
 
 function Home() {
     return (
@@ -40,48 +41,48 @@ function Home() {
                     <form className="needs-validation" novalidate>
                         <div className="row">
                             <div className="col-md-6 mb-3">
-                                <label for="firstName">Nome</label>
-                                <input type="text" className="form-control" id="firstName" placeholder="" value="" required />
+                                <Input name="name" label="Nome" type="text" class="form-control" required />
+
                                 <div className="invalid-feedback">
                                     Preencha um nome válido.
-                  </div>
+                                </div>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <label for="lastName">CPF</label>
-                                <input type="text" className="form-control" id="lastName" placeholder="" value="" required />
+                                <Input name="cpf" label="CPF" type="text" class="form-control" required />
+
                                 <div className="invalid-feedback">
                                     Preencha um CPF válido.
-                  </div>
+                                </div>
                             </div>
                         </div>
                         <div className="mb-3">
-                            <label for="email">Email <span className="text-muted">(Opcional)</span></label>
-                            <input type="email" className="form-control" id="email" placeholder="you@example.com" />
+                            <Input name="email" label="Email (Opcional)" type="text" class="form-control" placeholder="você@email.com" />
+
                             <div className="invalid-feedback">
                                 Por favor, preencha um email válido.
-                </div>
+                            </div>
                         </div>
 
                         <div className="mb-3">
-                            <label for="address">Endereço</label>
-                            <input type="text" className="form-control" id="address" placeholder="Avenida das cataratas, 137" required />
+                            <Input name="address" label="Endereço" type="text" class="form-control" placeholder="Avenida das cataratas, 137" required />
+
                             <div className="invalid-feedback">
                                 Preencha o endereço de entrega.
-                </div>
+                            </div>
                         </div>
 
                         <div className="mb-3">
-                            <label for="address2">Complemento <span className="text-muted">(Opcional)</span></label>
-                            <input type="text" className="form-control" id="address2" placeholder="Próximo ao Panorama" />
+                            <Input name="complement" label="Complemento" type="text" class="form-control" placeholder="Próximo ao Panorama" />
+
                         </div>
 
                         <div className="row">
                             <div className="col-md-3 mb-3">
-                                <label for="zip">CEP</label>
-                                <input type="text" className="form-control" id="zip" placeholder="" required />
+                                <Input name="zip" label="CEP" type="text" class="form-control" required />
+
                                 <div className="invalid-feedback">
                                     Preencha um CEP válido.
-                  </div>
+                                </div>
                             </div>
                         </div>
                         <hr className="mb-4" />
@@ -104,35 +105,35 @@ function Home() {
                         </div>
                         <div className="row">
                             <div className="col-md-6 mb-3">
-                                <label for="cc-name">Nome no cartão</label>
-                                <input type="text" className="form-control" id="cc-name" placeholder="" required />
+                                <Input name="card_name" label="Nome no cartão" type="text" class="form-control" required />
+
                                 <small className="text-muted">Todo nome, conforme escrito no cartão</small>
                                 <div className="invalid-feedback">
                                     Name on card is required
-                  </div>
+                                </div>
                             </div>
                             <div className="col-md-6 mb-3">
-                                <label for="cc-number">Número do cartão</label>
-                                <input type="text" className="form-control" id="cc-number" placeholder="" required />
+                                <Input name="card_number" label="Número do cartão" type="number" class="form-control" required />
+
                                 <div className="invalid-feedback">
                                     Credit card number is required
-                  </div>
+                                </div>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-md-3 mb-3">
-                                <label for="cc-expiration">Validade</label>
-                                <input type="text" className="form-control" id="cc-expiration" placeholder="" required />
+                                <Input name="card_validate" label="Validade" type="text" placeholder="MM/YYYY" class="form-control" required />
+
                                 <div className="invalid-feedback">
                                     Expiration date required
-                  </div>
+                                </div>
                             </div>
                             <div className="col-md-3 mb-3">
-                                <label for="cc-cvv">CVV</label>
-                                <input type="text" className="form-control" id="cc-cvv" placeholder="" required />
+                                <Input name="card_cvv" label="CVV" type="number" class="form-control" required />
+
                                 <div className="invalid-feedback">
                                     Security code required
-                  </div>
+                                </div>
                             </div>
                         </div>
                         <hr className="mb-4" />

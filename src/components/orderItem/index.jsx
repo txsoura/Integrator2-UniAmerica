@@ -1,19 +1,19 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'components/button/index'
 
-export default function Index() {
-    return (
-        <div class="card">
-            <div class="card-header">
-                nome do comerciante
-                <br />
-                <h5>data e hora</h5>
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">nome do produto</h5>
-                <p class="card-text">1x - descrição</p>
-                <a href="/order" class="btn btn-primary">pedir novamente</a>
-            </div>
+export default props => (
+    <div class="card">
+        <div class="card-header">
+            {props.merchant}
+            <br />
+            <h5>{props.date}</h5>
         </div>
-    );
-}
+        <div class="card-body">
+            <h5 class="card-title">{props.name}</h5>
+            <p class="card-text">{props.description}</p>
+            <Button href={props.href} class={props.class} text={props.text} />
+        </div>
+    </div>
+);
+

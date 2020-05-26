@@ -1,13 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Icon from 'components/icon/index'
 
-export default function Index() {
-    return (
-        <div >
-            <div style={{ fontSize: '296px', marginLeft: '47%' }}>
-                <i className="fa fa-exclamation fa-100x"></i>
-            </div>
-            <h5 className="title" style={{ textAlign: 'center' }}>Página não encontrada.</h5>
+export default props => (
+    < >
+        <div style={{ fontSize: '296px', marginLeft: '47%' }}>
+            <Icon icon={props.icon} />
         </div>
-    )
-}
+        <h1 className="title" style={{ textAlign: 'center' }}>{props.text}</h1>
+    </>
+)
+

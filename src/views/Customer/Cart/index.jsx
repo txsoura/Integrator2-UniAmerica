@@ -1,13 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartItem from 'components/cartItem/index'
+import Icon from 'components/icon/index'
 
 function Home() {
     return (
         <div class="container">
             <div class="card shopping-cart">
                 <div class="card-header bg-dark text-light">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <Icon icon="fa fa-shopping-cart" />
                 Carrinho
 
                 <div class="clearfix"></div>

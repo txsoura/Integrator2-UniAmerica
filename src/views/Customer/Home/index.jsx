@@ -2,6 +2,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import img from 'assets/img/street.jpg'
 import Card from 'components/card/index'
+import imgProd from 'assets/img/coca.jpg';
 
 function Home() {
     return (
@@ -41,9 +42,9 @@ function Home() {
                 <h3 className="title text-center" style={{ marginTop: 30 }}>Promoções</h3>
 
                 <div className="row">
-                    <Card />
-                    <Card />
-                    <Card />
+                    <Card img={imgProd} name="Produto 300 ml" price="300.00" href="/product" class="btn btn-primary" text="Ver" />
+                    <Card img={imgProd} name="Produto 200 ml" price="500.00" href="/product" class="btn btn-primary" text="Ver" />
+                    <Card img={imgProd} name="Produto 30 ml" price="10.00" href="/product" class="btn btn-primary" text="Ver" />
                 </div>
             </div>
         </div >
