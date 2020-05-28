@@ -8,5 +8,6 @@ export default function Index() {
                 <p>Gole &copy; 2020 | Todos os direitos reservados</p>
             </div>
         </footer>
+
     );
 }

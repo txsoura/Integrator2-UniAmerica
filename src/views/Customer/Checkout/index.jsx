@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CheckoutItem from 'components/checkoutItem/index'
 import Input from 'components/input/index'
 
-function Home() {
+function Index() {
     return (
         <div className="container" >
             <div className="row">
@@ -145,4 +145,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Index;

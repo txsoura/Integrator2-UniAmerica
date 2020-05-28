@@ -1,11 +1,11 @@
 import React from "react";
-import { BrowserRouter as Route, BrowserRouter, Switch } from "react-router-dom";
-import Landing from "./views/Landing";
-import Home from "./views/Customer/Home";
-import Cart from "./views/Customer/Cart";
-import Checkout from "./views/Customer/Checkout";
-import Status from "components/status/index";
-import Orders from "./views/Customer/Orders";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Landing from "./views/Landing/index";
+import Home from "./views/Customer/Home/index";
+import Cart from "./views/Customer/Cart/index";
+import Checkout from "./views/Customer/Checkout/index";
+import Status from "./views/Customer/Status/index";
+import Orders from "./views/Customer/Orders/index";
 
 export default (props) => (
     <BrowserRouter>
@@ -15,9 +15,7 @@ export default (props) => (
             <Route path="/cart" component={Cart} />
             <Route path="/checkout" component={Checkout} />
             <Route path="/orders" component={Orders} />
-            <Route path="*" >
-                <Status text="Página não encontrada..." icon="fa fa-exclamation fa-100x" />
-            </Route>
+            <Route path="*" component={Status} />
         </Switch>
     </BrowserRouter>
 );

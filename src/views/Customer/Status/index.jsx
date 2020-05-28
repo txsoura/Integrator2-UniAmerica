@@ -4,9 +4,8 @@ import Status from 'components/status/index'
 
 function Index() {
     return (
-        <div>
-            <Status />
-        </div>
+        <Status text="Página não encontrada..." icon="fa fa-exclamation fa-100x" />
+
     );
 }
 

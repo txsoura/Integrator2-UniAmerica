@@ -4,7 +4,7 @@ import img from 'assets/img/street.jpg'
 import Card from 'components/card/index'
 import imgProd from 'assets/img/coca.jpg';
 
-function Home() {
+function Index() {
     return (
         <div style={{ marginTop: -15 }}>
             <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
@@ -51,4 +51,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Index;

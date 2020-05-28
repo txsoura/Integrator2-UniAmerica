@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CartItem from 'components/cartItem/index'
 import Icon from 'components/icon/index'
 
-function Home() {
+function Index() {
     return (
         <div class="container">
             <div class="card shopping-cart">
@@ -35,4 +35,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Index;
