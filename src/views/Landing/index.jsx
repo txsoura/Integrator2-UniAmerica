@@ -1,69 +1,180 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "assets/vendor/bootstrap/css/bootstrap.min.css";
+import "assets/vendor/fontawesome-free/css/all.min.css";
+import "assets/vendor/simple-line-icons/css/simple-line-icons.css";
+import "assets/device-mockups/device-mockups.min.css";
+import "assets/css/new-age.min.css";
 
 function Landing() {
     return (
 
-        <div></div>
-        // header
-        // <section class="banner" style={{ marginTop: - 15 }}>
-        //     <div class="background-image" style={{ backgroundImage: url(img / street - header.jpg), height: '695 px'  /}}></div >
-        //     <h1>Em todo lugar, a todo momento!</h1>
-        //     <h3>Faz toda diferença.</h3>
-        //     <a href="produtos.html" class="btn">Ver mais</a>
-        // </section >
+        <>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-        // products
-        // <section class="products">
-        //     <h3 class="title" style="margin-top: -150;">Promoções</h3>
+            <header class="masthead">
+                <div class="container h-100">
+                    <div class="row h-100">
+                        <div class="col-lg-7 my-auto">
+                            <div class="header-content mx-auto">
+                                <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
+                                <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 my-auto">
+                            <div class="device-container">
+                                <div class="device-mockup iphone6_plus portrait white">
+                                    <div class="device">
+                                        <div class="screen">
+                                            <img src="img/demo-screen-1.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                        <div class="button">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-        //     <div class="row">
-        //         <div class="col-md-3">
-        //             <div class="card" style="width: 18rem;">
-        //                 <img src="img/cool-drink.png" height="250px" c /lass="car /d-img-top" alt="..." />
-        //              /    <div class="card-body">
-        //                     <h5 class="card-title">Produto 300 ml</h5>
-        //                     <h2 class="card-title pricing-card-title">R$ <small class="text-muted">300,00</small></h2>
-        //                     <a href="produto.html" class="btn btn-primary">Ver</a>
-        //                 </div>
-        //             </div>
-        //         </div>
+            <section class="download bg-primary text-center" id="download">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 mx-auto">
+                            <h2 class="section-heading">Discover what all the buzz is about!</h2>
+                            <p>Our app is available on any mobile device! Download now to get started!</p>
+                            <div class="badges">
+                                <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt="" /></a>
+                                <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        //         <div class="col-md-3">
-        //             <div class="card" style="width: 18rem;">
-        //                 <img src="img/beer.png" height="250px" class=" /card-img- /top" alt="..." />
-        //              /    <div class="card-body">
-        //                     <h5 class="card-title">Produto 300 ml</h5>
-        //                     <h2 class="card-title pricing-card-title">R$ <small class="text-muted">300,00</small></h2>
-        //                     <a href="produto.html" class="btn btn-primary">Ver</a>
-        //                 </div>
-        //             </div>
-        //         </div>
+            <section class="features" id="features">
+                <div class="container">
+                    <div class="section-heading text-center">
+                        <h2>Unlimited Features, Unlimited Fun</h2>
+                        <p class="text-muted">Check out what you can do with this app theme!</p>
+                        <hr />
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 my-auto">
+                            <div class="device-container">
+                                <div class="device-mockup iphone6_plus portrait white">
+                                    <div class="device">
+                                        <div class="screen">
+                                            <img src="img/demo-screen-1.jpg" class="img-fluid" alt="" />
+                                        </div>
+                                        <div class="button">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 my-auto">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="feature-item">
+                                            <i class="icon-screen-smartphone text-primary"></i>
+                                            <h3>Device Mockups</h3>
+                                            <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="feature-item">
+                                            <i class="icon-camera text-primary"></i>
+                                            <h3>Flexible Use</h3>
+                                            <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="feature-item">
+                                            <i class="icon-present text-primary"></i>
+                                            <h3>Free to Use</h3>
+                                            <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="feature-item">
+                                            <i class="icon-lock-open text-primary"></i>
+                                            <h3>Open Source</h3>
+                                            <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        //         <div class="col-md-3">
-        //             <div class="card" style="width: 18rem;">
-        //                 <img src="img/snacks.jpg" height="250px" class /="card-im /g-top" alt="..." />
-        //              /    <div class="card-body">
-        //                     <h5 class="card-title">Produto 300 ml</h5>
-        //                     <h2 class="card-title pricing-card-title">R$ <small class="text-muted">300,00</small></h2>
-        //                     <a href="produto.html" class="btn btn-primary">Ver</a>
-        //                 </div>
-        //             </div>
-        //         </div>
+            <section class="cta">
+                <div class="cta-content">
+                    <div class="container">
+                        <h2>Stop waiting.<br />Start building.</h2>
+                        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </section>
 
-        //         <div class="col-md-3">
-        //             <div class="card" style="width: 18rem;">
-        //                 <img src="img/essence.jpg" height="250px" clas /s="card-i /mg-top" alt="..." />
-        //              /    <div class="card-body">
-        //                     <h5 class="card-title">Produto 300 ml</h5>
-        //                     <h2 class="card-title pricing-card-title">R$ <small class="text-muted">300,00</small></h2>
-        //                     <a href="produto.html" class="btn btn-primary">Ver</a>
-        //                 </div>
-        //             </div>
-        //         </div>
-        //     </div>
-        // </section>
-
+            <section class="contact bg-primary" id="contact">
+                <div class="container">
+                    <h2>We
+        <i class="fas fa-heart"></i>
+        new friends!</h2>
+                    <ul class="list-inline list-social">
+                        <li class="list-inline-item social-twitter">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item social-facebook">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item social-instagram">
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item social-whatsapp">
+                            <a href="#">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </>
     );
 }
 

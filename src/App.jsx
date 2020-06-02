@@ -7,7 +7,7 @@ import Footer from "./../src/components/footer";
 
 export default props => (
     <>
-        <NavBar />
+        {/* <NavBar /> */}
         <Routes />
         <Footer />
     </>
