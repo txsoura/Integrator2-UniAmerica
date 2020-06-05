@@ -9,13 +9,15 @@ import Orders from "./views/Customer/Orders/index";
 
 export default (props) => (
     <BrowserRouter>
-        <Switch>
-            <Route path="/" exact={true} component={Landing} />
-            <Route path="/home" component={Home} />
-            <Route path="/cart" component={Cart} />
-            <Route path="/checkout" component={Checkout} />
-            <Route path="/orders" component={Orders} />
-            <Route path="*" component={Status} />
-        </Switch>
+        <div style={{ marginBottom: 80, marginTop: 85 }}>
+            <Switch>
+                <Route path="/" exact={true} component={Landing} />
+                <Route path="/home" component={Home} />
+                <Route path="/cart" component={Cart} />
+                <Route path="/checkout" component={Checkout} />
+                <Route path="/orders" component={Orders} />
+                <Route path="*" component={Status} />
+            </Switch>
+        </div>
     </BrowserRouter>
 );

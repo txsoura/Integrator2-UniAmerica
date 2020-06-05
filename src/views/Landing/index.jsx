@@ -1,4 +1,9 @@
 import React from "react";
+import logo from 'assets/img/logo.png';
+import screen from 'assets/img/screen.jpeg';
+import googlePlay from 'assets/img/google-play-badge.svg';
+import appleStore from 'assets/img/app-store-badge.svg';
+import Icon from 'components/icon/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "assets/vendor/bootstrap/css/bootstrap.min.css";
 import "assets/vendor/fontawesome-free/css/all.min.css";
@@ -12,24 +17,7 @@ function Landing() {
         <>
             <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
                 <div class="container">
-                    <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        Menu
-        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#download">Download</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <a class="navbar-brand js-scroll-trigger" href="#">G<img src={logo} height="33px" width="33px" alt="" />ole</a>
                 </div>
             </nav>
 
@@ -38,8 +26,9 @@ function Landing() {
                     <div class="row h-100">
                         <div class="col-lg-7 my-auto">
                             <div class="header-content mx-auto">
-                                <h1 class="mb-5">New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                                <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+                                <h1 class="mb-5">Bem vindo, a nova forma de matar a sua sede...</h1>
+                                <h3 class="mb-5">Gole,é um aplicativo de entrega de bebidas e petiscos</h3>
+                                <a href="/auth/register" class="btn btn-outline btn-xl js-scroll-trigger">Cadastre-se gratuitamente!</a>
                             </div>
                         </div>
                         <div class="col-lg-5 my-auto">
@@ -47,7 +36,7 @@ function Landing() {
                                 <div class="device-mockup iphone6_plus portrait white">
                                     <div class="device">
                                         <div class="screen">
-                                            <img src="img/demo-screen-1.jpg" class="img-fluid" alt="" />
+                                            <img src={screen} class="img-fluid" alt="" />
                                         </div>
                                         <div class="button">
                                         </div>
@@ -63,11 +52,11 @@ function Landing() {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 mx-auto">
-                            <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                            <p>Our app is available on any mobile device! Download now to get started!</p>
+                            <h2 class="section-heading">Descubra o que mais gostas de beber!</h2>
+                            <p>Em breve, o nosso aplicativo estará disponível em todas as lojas de aplicativos mobile.</p>
                             <div class="badges">
-                                <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt="" /></a>
-                                <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt="" /></a>
+                                <a class="badge-link" href="#"><img src={googlePlay} alt="" /></a>
+                                <a class="badge-link" href="#"><img src={appleStore} alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -77,8 +66,8 @@ function Landing() {
             <section class="features" id="features">
                 <div class="container">
                     <div class="section-heading text-center">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
+                        <h2>Entregas a qualquer hora, e lugar</h2>
+                        <p class="text-muted">Porquê usar?</p>
                         <hr />
                     </div>
                     <div class="row">
@@ -87,7 +76,7 @@ function Landing() {
                                 <div class="device-mockup iphone6_plus portrait white">
                                     <div class="device">
                                         <div class="screen">
-                                            <img src="img/demo-screen-1.jpg" class="img-fluid" alt="" />
+                                            <img src={screen} class="img-fluid" alt="" />
                                         </div>
                                         <div class="button">
                                         </div>
@@ -100,32 +89,25 @@ function Landing() {
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="feature-item">
-                                            <i class="icon-screen-smartphone text-primary"></i>
-                                            <h3>Device Mockups</h3>
-                                            <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                            <Icon icon="fa fa-glass" />
+                                            <h3>Brinde e seja feliz</h3>
+                                            <p class="text-muted">O seu pedido, chega rápido que nem um foguete e gelados como a neve.</p>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="feature-item">
-                                            <i class="icon-camera text-primary"></i>
-                                            <h3>Flexible Use</h3>
-                                            <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                                            <Icon icon="fa fa-map" />
+                                            <h3>Em qualquer lugar e momento</h3>
+                                            <p class="text-muted">Procuramos o vendedor mais próximo de si, pois nos preocupamos com a sua satisfação.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
                                         <div class="feature-item">
-                                            <i class="icon-present text-primary"></i>
-                                            <h3>Free to Use</h3>
-                                            <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="feature-item">
-                                            <i class="icon-lock-open text-primary"></i>
-                                            <h3>Open Source</h3>
-                                            <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                                            <Icon icon="fa fa-money" />
+                                            <h3>Pague, somente o que deve</h3>
+                                            <p class="text-muted">Os preços dos nossos produtos, são todos tabelados.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -138,8 +120,8 @@ function Landing() {
             <section class="cta">
                 <div class="cta-content">
                     <div class="container">
-                        <h2>Stop waiting.<br />Start building.</h2>
-                        <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>
+                        <h2>Pare a sua sede.<br />Um clique, suave como a aguá.</h2>
+                        <a href="/home" class="btn btn-outline btn-xl js-scroll-trigger">Pedir</a>
                     </div>
                 </div>
                 <div class="overlay"></div>
@@ -147,27 +129,27 @@ function Landing() {
 
             <section class="contact bg-primary" id="contact">
                 <div class="container">
-                    <h2>We
+                    <h2>Nós
         <i class="fas fa-heart"></i>
-        new friends!</h2>
+        bebidas!</h2>
                     <ul class="list-inline list-social">
                         <li class="list-inline-item social-twitter">
-                            <a href="#">
+                            <a href="https://twitter.com">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </li>
                         <li class="list-inline-item social-facebook">
-                            <a href="#">
+                            <a href="https://facebook.com">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
                         <li class="list-inline-item social-instagram">
-                            <a href="#">
+                            <a href="https://instagram.com">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
                         <li class="list-inline-item social-whatsapp">
-                            <a href="#">
+                            <a href="https://whatsapp.com">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
                         </li>

@@ -70,7 +70,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-    color: #fdcc52;
+    color: white;
     font-family: "Catamaran", "Helvetica", "Arial", "sans-serif";
     font-weight: 200;
     letter-spacing: 1px;
@@ -78,7 +78,7 @@ section h2 {
 
 #mainNav .navbar-brand:hover,
 #mainNav .navbar-brand:focus {
-    color: #fcbd20;
+    color white;
 }
 
 #mainNav .navbar-toggler {
@@ -110,7 +110,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-    color: #fdcc52;
+    color: white;
 }
 
 @media (min-width: 992px) {
@@ -142,7 +142,7 @@ section h2 {
     }
     #mainNav.navbar-shrink .navbar-brand:hover,
     #mainNav.navbar-shrink .navbar-brand:focus {
-        color: #fdcc52;
+        color: white;
     }
     #mainNav.navbar-shrink .navbar-nav > li > a,
     #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -150,7 +150,7 @@ section h2 {
     }
     #mainNav.navbar-shrink .navbar-nav > li > a:hover,
     #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-        color: #fdcc52;
+        color: white;
     }
 }
 
