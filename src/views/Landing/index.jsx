@@ -1,5 +1,4 @@
 import React from "react";
-import logo from 'assets/img/logo.png';
 import screen from 'assets/img/screen.jpeg';
 import googlePlay from 'assets/img/google-play-badge.svg';
 import appleStore from 'assets/img/app-store-badge.svg';
@@ -15,12 +14,6 @@ function Landing() {
     return (
 
         <>
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-                <div class="container">
-                    <a class="navbar-brand js-scroll-trigger" href="#">G<img src={logo} height="33px" width="33px" alt="" />ole</a>
-                </div>
-            </nav>
-
             <header class="masthead">
                 <div class="container h-100">
                     <div class="row h-100">
@@ -55,8 +48,8 @@ function Landing() {
                             <h2 class="section-heading">Descubra o que mais gostas de beber!</h2>
                             <p>Em breve, o nosso aplicativo estará disponível em todas as lojas de aplicativos mobile.</p>
                             <div class="badges">
-                                <a class="badge-link" href="#"><img src={googlePlay} alt="" /></a>
-                                <a class="badge-link" href="#"><img src={appleStore} alt="" /></a>
+                                <a class="badge-link" href="/"><img src={googlePlay} alt="" /></a>
+                                <a class="badge-link" href="/"><img src={appleStore} alt="" /></a>
                             </div>
                         </div>
                     </div>

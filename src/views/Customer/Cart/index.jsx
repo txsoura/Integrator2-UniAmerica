@@ -14,8 +14,8 @@ function Index() {
                 <div class="clearfix"></div>
                 </div>
                 <div class="card-body">
-                    <CartItem />
-                    <CartItem />
+                    <CartItem name="coca-cola 300 ml" description="bem gelada" />
+                    <CartItem name="tang 3 ml" description="para misturar com aguá" />
                 </div>
                 <div class="card-footer">
                     <div class="pull-left" style={{ margin: '10px' }}>
