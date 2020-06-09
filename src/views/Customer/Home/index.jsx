@@ -4,9 +4,9 @@ import img from 'assets/img/street.jpg'
 import Card from 'components/card/index'
 import imgProd from 'assets/img/coca.jpg';
 
-function Home() {
+function Index() {
     return (
-        <div style={{ marginTop: -15 }}>
+        <div style={{ marginBottom: 100 }}>
             <div id="carouselExampleCaptions" className="carousel slide" data-ride="carousel">
                 <ol className="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" className="active"></li>
@@ -51,4 +51,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Index;

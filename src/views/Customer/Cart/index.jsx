@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CartItem from 'components/cartItem/index'
 import Icon from 'components/icon/index'
 
-function Home() {
+function Index() {
     return (
         <div class="container">
             <div class="card shopping-cart">
@@ -14,8 +14,8 @@ function Home() {
                 <div class="clearfix"></div>
                 </div>
                 <div class="card-body">
-                    <CartItem />
-                    <CartItem />
+                    <CartItem name="coca-cola 300 ml" description="bem gelada" />
+                    <CartItem name="tang 3 ml" description="para misturar com aguá" />
                 </div>
                 <div class="card-footer">
                     <div class="pull-left" style={{ margin: '10px' }}>
@@ -35,4 +35,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Index;

@@ -6,9 +6,9 @@ import Footer from "./../src/components/footer";
 
 
 export default props => (
-    <div>
+    <>
         <NavBar />
         <Routes />
         <Footer />
-    </div>
+    </>
 )

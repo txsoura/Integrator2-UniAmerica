@@ -1,11 +1,12 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import CheckoutItem from 'components/checkoutItem/index'
-import Input from 'components/input/index'
+import CheckoutItem from 'components/checkoutItem/index';
+import Input from 'components/input/index';
+import Button from 'components/button/index';
 
-function Home() {
+function Index() {
     return (
-        <div className="container" >
+        <div className="container" style={{ marginBottom: 100 }} >
             <div className="row">
                 <div className="col-md-4 order-md-2 mb-4">
                     <h4 className="d-flex justify-content-between align-items-center mb-3">
@@ -137,7 +138,7 @@ function Home() {
                             </div>
                         </div>
                         <hr className="mb-4" />
-                        <button className="btn btn-primary btn-lg btn-block" type="submit">Efetuar pedido</button>
+                        <Button class="btn btn-primary btn-lg btn-block" href="/order/status" text="Efetuar pedido" />
                     </form>
                 </div>
             </div>
@@ -145,4 +146,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Index;
