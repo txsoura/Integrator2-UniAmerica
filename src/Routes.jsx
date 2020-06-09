@@ -6,6 +6,7 @@ import Cart from "./views/Customer/Cart";
 import Checkout from "./views/Customer/Checkout";
 import Status from "components/status/index";
 import Orders from "./views/Customer/Orders";
+import Product from "./views/Customer/Product";
 
 export default (props) => (
     <BrowserRouter>
@@ -15,6 +16,8 @@ export default (props) => (
             <Route path="/cart" component={Cart} />
             <Route path="/checkout" component={Checkout} />
             <Route path="/orders" component={Orders} />
+            <Route path="/product" component={Product} />
+            
             <Route path="*" >
                 <Status text="Página não encontrada..." icon="fa fa-exclamation fa-100x" />
             </Route>
