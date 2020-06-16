@@ -1,10 +1,10 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Landing from "./views/Landing/index";
 import Home from "./views/Customer/Home/index";
 import Cart from "./views/Customer/Cart/index";
 import Checkout from "./views/Customer/Checkout/index";
-import Status from "./views/Customer/Status/index";
+// import Status from "./views/Customer/Status/index";
 import Orders from "./views/Customer/Orders/index";
 import Order from "./views/Customer/Order/index";
 import OrderStatus from "./views/Customer/OrderStatus/index";
