@@ -9,6 +9,8 @@ import Orders from "./views/Customer/Orders/index";
 import Order from "./views/Customer/Order/index";
 import OrderStatus from "./views/Customer/OrderStatus/index";
 import { isAuthenticated } from "auth";
+import Product from "views/Customer/Product";
+import Perfil from "views/Customer/Perfil/";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route{...rest} render={props => (
@@ -31,6 +33,8 @@ export default (props) => (
                 <PrivateRoute path="/order/status" component={OrderStatus} />
                 <PrivateRoute path="/order" component={Order} />
                 <PrivateRoute path="/home" component={Home} />
+                <PrivateRoute path="/product" component={Product} />
+                <PrivateRoute path="/perfil" component={Perfil} />
 
                 {/* <Route path="*" component={Status} /> */}
             </Switch>
