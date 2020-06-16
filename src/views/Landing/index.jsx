@@ -3,7 +3,7 @@ import screen from 'assets/img/screen.jpeg';
 import googlePlay from 'assets/img/google-play-badge.svg';
 import appleStore from 'assets/img/app-store-badge.svg';
 import Icon from 'components/icon/index';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'views/Customer/Profile/node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "assets/vendor/bootstrap/css/bootstrap.min.css";
 import "assets/vendor/fontawesome-free/css/all.min.css";
 import "assets/vendor/simple-line-icons/css/simple-line-icons.css";
@@ -114,7 +114,7 @@ function Landing() {
                 <div class="cta-content">
                     <div class="container">
                         <h2>Pare a sua sede.<br />Um clique, suave como a aguá.</h2>
-                        <a href="/home" class="btn btn-outline btn-xl js-scroll-trigger">Pedir</a>
+                        <a href="/app/home" class="btn btn-outline btn-xl js-scroll-trigger">Pedir</a>
                     </div>
                 </div>
                 <div class="overlay"></div>

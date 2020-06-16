@@ -24,7 +24,7 @@ function Index() {
                         </div>
                     </div>
                     <div class="pull-right" style={{ margin: '10px' }}>
-                        <a href="/checkout" class="btn btn-success pull-right">Confirmar</a>
+                        <a href="/app/checkout" class="btn btn-success pull-right">Confirmar</a>
                         <div class="pull-right" style={{ margin: '5px' }}>
                             Total: <b>R$ 58.00</b>
                         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'views/Customer/Profile/node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Alert from 'components/alert/index'
 import OrderItem from 'components/orderItem/index';
 
@@ -26,7 +26,7 @@ function Index() {
                 </div>
 
                 <div class="card-footer text-muted">
-                    <a href="/cart" class="btn btn-primary">Pedir todos os produtos novamente</a>
+                    <a href="/app/cart" class="btn btn-primary">Pedir todos os produtos novamente</a>
                     <span className="float-right"><b>Total:</b> R$ 1234,00</span>
                 </div>
             </div>

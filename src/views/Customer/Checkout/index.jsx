@@ -1,8 +1,8 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'views/Customer/Profile/node_modules/bootstrap/dist/css/bootstrap.min.css';
 import CheckoutItem from 'components/checkoutItem/index';
-import Input from 'components/input/index';
-import Button from 'components/button/index';
+import Input from 'views/Customer/Profile/node_modules/components/input/index';
+import Button from 'views/Customer/Profile/node_modules/components/button/index';
 
 function Index() {
     return (
@@ -138,7 +138,7 @@ function Index() {
                             </div>
                         </div>
                         <hr className="mb-4" />
-                        <Button class="btn btn-primary btn-lg btn-block" href="/order/status" text="Efetuar pedido" />
+                        <Button class="btn btn-primary btn-lg btn-block" href="/app/order/status" text="Efetuar pedido" />
                     </form>
                 </div>
             </div>
