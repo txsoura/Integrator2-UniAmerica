@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Card from "components/card/index";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Button from 'components/button/index';
 
 export default class Product extends Component {
     render() {
@@ -16,14 +16,15 @@ export default class Product extends Component {
                             <div class="card-body">
                                 <h5 class="card-title">Brahma 350ml</h5>
                                 <p class="card-text">R$ 3,19</p>
-                                <p class="card-text"><small class="text-muted">vai tomar no cuuuuuuuu</small></p>
+                                <p class="card-text"><small class="text-muted">Leve 5 e pague 4 ! ! !</small></p>
+                                <hr className="mb-3" />
+                                <Button class="btn btn-success btn-lg" href="" text="ADICIONAR" />
                             </div>
                         </div>
                     </div>
                 </div>
               </div>
-              <br /><br /><br />
-          </div>  
+        </div>  
         );
     }
 }
