@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import Card from "components/card/index";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Pagination from 'components/Pagination';
 
-export default class ListaProdutos extends Component {
+export default class Product extends Component {
     render() {
         return (
             <div classname="container">
@@ -42,8 +42,6 @@ export default class ListaProdutos extends Component {
                 <br /><br /><br />
                 <Pagination />
             </div>
-
-
         );
     }
 }
