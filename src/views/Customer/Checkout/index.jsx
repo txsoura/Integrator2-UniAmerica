@@ -138,7 +138,7 @@ function Index() {
                             </div>
                         </div>
                         <hr className="mb-4" />
-                        <Button class="btn btn-primary btn-lg btn-block" href="/order/status" text="Efetuar pedido" />
+                        <Button class="btn btn-primary btn-lg btn-block" href="/app/order/status" text="Efetuar pedido" />
                     </form>
                 </div>
             </div>
