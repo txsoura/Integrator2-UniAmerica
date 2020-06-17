@@ -114,7 +114,7 @@ function Landing() {
                 <div class="cta-content">
                     <div class="container">
                         <h2>Pare a sua sede.<br />Um clique, suave como a aguá.</h2>
-                        <a href="/app/home" class="btn btn-outline btn-xl js-scroll-trigger">Pedir</a>
+                        <a href="/app" class="btn btn-outline btn-xl js-scroll-trigger">Pedir</a>
                     </div>
                 </div>
                 <div class="overlay"></div>
