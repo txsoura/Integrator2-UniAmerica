@@ -3,7 +3,7 @@ import screen from 'assets/img/screen.jpeg';
 import googlePlay from 'assets/img/google-play-badge.svg';
 import appleStore from 'assets/img/app-store-badge.svg';
 import Icon from 'components/icon/index';
-import 'views/Customer/Profile/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "assets/vendor/bootstrap/css/bootstrap.min.css";
 import "assets/vendor/fontawesome-free/css/all.min.css";
 import "assets/vendor/simple-line-icons/css/simple-line-icons.css";

@@ -41,11 +41,14 @@ export default (props) => (
                 <PrivateRoute path="/app/home" component={Home} />
                 <PrivateRoute path="/app/product" component={Product} />
                 <PrivateRoute path="/app/profile" component={Perfil} />
-                <Route path="/auth/Login" component={Login} />
-                <Route path="/resister/Signup" component={Signup} />
-                <Route pacth="/senha/recuperar" component={Recuperar} />
+
                 <Route path="/products/ListaProdutos" component={ListaProdutos} />
-                <Route path="/p/entregador" component={Entregador} />
+
+                <Route path="/driver/entregador" component={Entregador} />
+
+                <Route path="/auth/Login" component={Login} />
+                <Route path="/auth/register" component={Signup} />
+                <Route path="/auth/password" component={Recuperar} />
 
                 <Route path="*" component={Status} />
 

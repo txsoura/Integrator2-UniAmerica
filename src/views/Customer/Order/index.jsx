@@ -1,5 +1,5 @@
 import React from 'react';
-import 'views/Customer/Profile/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Alert from 'components/alert/index'
 import OrderItem from 'components/orderItem/index';
 

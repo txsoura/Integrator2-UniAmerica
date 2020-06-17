@@ -1,8 +1,8 @@
 import React from 'react';
-import 'views/Customer/Profile/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import CheckoutItem from 'components/checkoutItem/index';
-import Input from 'views/Customer/Profile/node_modules/components/input/index';
-import Button from 'views/Customer/Profile/node_modules/components/button/index';
+import Input from 'components/input/index';
+import Button from 'components/button/index';
 
 function Index() {
     return (

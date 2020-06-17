@@ -1,5 +1,5 @@
 import React from 'react';
-import 'views/Customer/Profile/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import img from 'assets/img/street.jpg'
 import Card from 'components/card/index'
 import imgProd1 from 'assets/img/coca.jpg';
