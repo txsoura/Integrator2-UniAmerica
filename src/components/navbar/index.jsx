@@ -13,15 +13,15 @@ export default function Index() {
 
             {auth ?
                 <nav className="my-2 my-md-0 mr-md-3">
-                    <Button class="p-2 text-dark" href="/products" text="Produtos" />
-                    <Button class="p-2 text-dark" href="/home" text="Promoções" />
+                    <Button class="p-2 text-dark" href="/app/products" text="Produtos" />
+                    <Button class="p-2 text-dark" href="/app/home" text="Promoções" />
                     <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Perfil
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu">
-                        <button class="dropdown-item" href="/profile" text="Minha conta" />
-                        <button class="dropdown-item" href="/cart" text="Carrinho" />
-                        <button class="dropdown-item" href="/orders" text="Pedidos" />
+                        <button class="dropdown-item" href="/app/profile" text="Minha conta" />
+                        <button class="dropdown-item" href="/app/cart" text="Carrinho" />
+                        <button class="dropdown-item" href="/app/orders" text="Pedidos" />
                         <div className="dropdown-divider"></div>
                         <button class="dropdown-item" href="/auth/logout" text="Sair" />
                     </div>
