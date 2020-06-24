@@ -18,12 +18,22 @@ import Product from "views/Customer/Product";
 import Perfil from "views/Customer/Profile";
 import Mensagem from "./views/Customer/MensagemExibida/index";
 
-const PrivateRoute = ({ component: Component, ...rest }) => (
+const PrivateRoute= ({ component: Component, ...rest }) => (
     <Route{...rest} render={props => (
         isAuthenticated() ? (
             <Component{...props} />
         ) : (
                 <Redirect to={{ pathname: '/auth/login', state: { from: props.location } }} />
+            )
+    )} />
+);
+
+const GuestRoute = ({ component: Component, ...rest }) => (
+    <Route{...rest} render={props => (
+        !!isAuthenticated() ? (
+            <Redirect to={{ pathname: '/auth/login', state: { from: props.location } }} />
+        ) : (
+                <Component{...props} />
             )
     )} />
 );

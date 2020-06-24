@@ -14,7 +14,7 @@ export default function Index() {
             {auth ?
                 <nav className="my-2 my-md-0 mr-md-3">
                     <Button class="p-2 text-dark" href="/app/products" text="Produtos" />
-                    <Button class="p-2 text-dark" href="/app/home" text="Promoções" />
+                    <Button class="p-2 text-dark" href="/app" text="Promoções" />
                     <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Perfil
                     </button>
