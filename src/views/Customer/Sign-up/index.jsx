@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Input from "components/input/index";
 import Button from "components/button/index";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../Sign-up/index.css"
 
 
 

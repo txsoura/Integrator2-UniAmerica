@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Input from "components/input/index";
 import Button from "components/button/index";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../../app.css";
 import Icon from "components/icon/index";
+import "../Login/index.css";
 
 
 
@@ -20,7 +20,7 @@ export default class Login extends Component {
         <br />
         <br />
         <br />
-        <div className="auth-wrapper">
+        <div className="auth-wrapper group-mb-8">
           <div className="auth-inner">
             <form>
               <h3>Seja bem-vindo</h3>
@@ -41,7 +41,7 @@ export default class Login extends Component {
               />
               <Button name="ENTRAR" />
               <p className="forgot-password text-right">
-                Esqueceu <a href="https://www.google.com/">Senha?</a>
+              Esqueceste-te a <a href="https://www.google.com/">Senha?</a>
               </p>
             </form>
           </div>

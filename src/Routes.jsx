@@ -8,14 +8,15 @@ import Status from "./views/Customer/Status/index";
 import Orders from "./views/Customer/Orders/index";
 import Order from "./views/Customer/Order/index";
 import OrderStatus from "./views/Customer/OrderStatus/index";
-import Login from "./components/Form/Login/index";
-import Signup from "./components/Form/Sign-up/index";
-import ListaProdutos from "./components/ProductList/index";
-import Entregador from "./components/Form/Entregador/index";
-import Recuperar from "./components/Form/Recuperarsenha/index";
+import Login from "./views/Customer/Login/index";
+import Signup from "./views/Customer/Sign-up/index";
+import ListaProdutos from "./views/Customer/ProductList/index";
+import Entregador from "./views/Customer/Entregador/index";
+import Recuperar from "./views/Customer/Recuperarsenha/index";
 import { isAuthenticated } from "auth";
 import Product from "views/Customer/Product";
 import Perfil from "views/Customer/Profile";
+import Mensagem from "./views/Customer/MensagemExibida/index";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route{...rest} render={props => (
@@ -42,11 +43,14 @@ export default (props) => (
                 <PrivateRoute path="/app/product" component={Product} />
                 <PrivateRoute path="/app/profile" component={Perfil} />
 
-                <Route path="/products/ListaProdutos" component={ListaProdutos} />
+              
+                <PrivateRoute path="/products/listaProdutos" component={ListaProdutos} />
+
+                <Route path="/auth/mensagem" component={Mensagem} />
 
                 <Route path="/driver/entregador" component={Entregador} />
 
-                <Route path="/auth/Login" component={Login} />
+                <Route path="/auth/login" component={Login} />
                 <Route path="/auth/register" component={Signup} />
                 <Route path="/auth/password" component={Recuperar} />
 

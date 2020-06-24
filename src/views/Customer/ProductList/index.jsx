@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Card from "components/card/index";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Pagination from 'components/Pagination';
-import "../../app.css";
+import "../ProductList/index.css";
+
 
 export default class ListaProdutos extends Component {
     render() {
