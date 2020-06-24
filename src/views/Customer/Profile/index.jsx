@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
-import Input from 'components/input/index';
-import Button from 'components/button/index';
+import Input from 'components/input';
+import Button from 'components/button';
 
-export default class Perfil extends Component {
+export default class Profile extends Component {
     render() {
         return (
             <div className="container" style={{ marginBottom: 100 }} >
