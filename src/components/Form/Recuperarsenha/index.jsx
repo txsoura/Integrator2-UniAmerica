@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Input from "components/input";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../../../app.css"
 

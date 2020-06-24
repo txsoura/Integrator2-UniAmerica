@@ -8,6 +8,7 @@ import Status from "./views/Customer/Status/index";
 import Orders from "./views/Customer/Orders/index";
 import Order from "./views/Customer/Order/index";
 import OrderStatus from "./views/Customer/OrderStatus/index";
+import HistorySales from "./views/Customer/HistorySales/index";
 import Login from "./components/Form/Login/index";
 import Signup from "./components/Form/Sign-up/index";
 import ListaProdutos from "./components/ProductList/index";
@@ -38,6 +39,7 @@ export default (props) => (
                 <PrivateRoute path="/app/orders" component={Orders} />
                 <PrivateRoute path="/app/order/status" component={OrderStatus} />
                 <PrivateRoute path="/app/order" component={Order} />
+                <PrivateRoute path="/app/historysales" component={HistorySales} />
                 <PrivateRoute path="/app/home" component={Home} />
                 <PrivateRoute path="/app/product" component={Product} />
                 <PrivateRoute path="/app/profile" component={Perfil} />
