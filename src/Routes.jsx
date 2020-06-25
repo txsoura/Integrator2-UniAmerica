@@ -12,7 +12,7 @@ import { isAuthenticated } from "auth";
 import Product from "views/Customer/Product";
 import Profile from "views/Customer/Profile";
 
-const PrivateRoute = ({ component: Component, ...rest }) => (
+const CustomerRoute = ({ component: Component, ...rest }) => (
     <Route{...rest} render={props => (
         isAuthenticated() ? (
             <Component{...props} />
