@@ -29,16 +29,6 @@ const CustomerRoute = ({ component: Component, ...rest }) => (
     )} />
 );
 
-const GuestRoute = ({ component: Component, ...rest }) => (
-    <Route{...rest} render={props => (
-        !!isAuthenticated() ? (
-            <Redirect to={{ pathname: '/auth/login', state: { from: props.location } }} />
-        ) : (
-                <Component{...props} />
-            )
-    )} />
-);
-
 
 export default (props) => (
     <BrowserRouter>

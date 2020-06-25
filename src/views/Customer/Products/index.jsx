@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Card from "components/card/index";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Pagination from 'components/pagination/index';
+// import Pagination from 'components/pagination/index';
 import "./index.css";
 
 
@@ -48,7 +48,7 @@ export default class Index extends Component {
                     />
                 </div>
                 <br /><br /><br />
-                <Pagination />
+                {/* <Pagination /> */}
             </div>
 
 
