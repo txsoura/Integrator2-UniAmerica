@@ -17,7 +17,7 @@ function Index() {
                                 <p class="card-text">R$ 3,19</p>
                                 <p class="card-text"><small class="text-muted">Leve 5 e pague 4 ! ! !</small></p>
                                 <hr className="mb-3" />
-                                <Button class="btn btn-success btn-lg" href="" text="ADICIONAR" />
+                                <Button class="btn btn-success btn-lg" href="/app/cart" text="ADICIONAR" />
                             </div>
                         </div>
                     </div>

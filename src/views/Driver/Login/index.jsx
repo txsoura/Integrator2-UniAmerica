@@ -28,10 +28,10 @@ export default class Index extends Component {
                                 label="Palavra Passe"
                                 class="form-control"
                             />
-                            <Button name="ENTRAR" />
+                            <Button name="ENTRAR">dgfbd</Button>
 
                             <h3>            ou                  </h3>
-                            <button name="ENTRAR COM CELULAR" />
+                            <button name="ENTRAR COM CELULAR">jhgjhfgj</button>
                         </form>
 
                     </div>

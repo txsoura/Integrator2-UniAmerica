@@ -15,16 +15,19 @@ export default function Index() {
                 <nav className="my-2 my-md-0 mr-md-3">
                     <Button className="p-2 text-dark" href="/app/products" text="Produtos" />
                     <Button className="p-2 text-dark" href="/app" text="Promoções" />
-                    <button className="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <Button className="p-2 text-dark" href="/app/profile" text="Perfil" />
+                    <Button className="p-2 text-dark" href="/app/cart" text="Carrinho" />
+                    <Button className="p-2 text-dark" href="/app/orders" text="Pedidos" />
+                    {/* <button className="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Perfil
-                    </button>
-                    <div className="dropdown-menu" aria-labelledby="dropdownMenu">
+                    </button> */}
+                    {/* <div className="dropdown-menu" aria-labelledby="dropdownMenu">
                         <button className="dropdown-item" href="/app/profile" text="Minha conta" />
                         <button className="dropdown-item" href="/app/cart" text="Carrinho" />
                         <button className="dropdown-item" href="/app/orders" text="Pedidos" />
                         <div className="dropdown-divider"></div>
                         <button className="dropdown-item" href="/auth/logout" text="Sair" />
-                    </div>
+                    </div> */}
                 </nav>
                 :
                 <Button className="btn btn-outline-primary" href="/auth/login" text="Entrar" />
