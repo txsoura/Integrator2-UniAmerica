@@ -17,6 +17,7 @@ import Product from "./views/Customer/Product/index";
 import Message from "./views/Customer/Message/index";
 import Profile from "./views/Customer/Profile/index";
 import MerchantProfile from "./views/Merchant/Profile/index";
+import MerchantOrders from "./views/Merchant/Orders/index";
 import Products from "./views/Customer/Products/index";
 
 const CustomerRoute = ({ component: Component, ...rest }) => (
@@ -47,6 +48,7 @@ export default (props) => (
 
                 <CustomerRoute path="/driver/login" component={DriverLogin} />
                 <CustomerRoute path="/merchant/profile" component={MerchantProfile} />
+                <CustomerRoute path="/merchant/orders" component={MerchantOrders} />
                 <CustomerRoute path="/" exact={true} component={Landing} />
                 <CustomerRoute path="*" component={Status} />
 
