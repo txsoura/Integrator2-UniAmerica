@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Card from "components/card/index";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Pagination from 'components/Pagination';
-import "../../../app.css";
+import Pagination from 'components/pagination/index';
+import "./index.css";
 
-export default class Product extends Component {
+
+export default class Index extends Component {
     render() {
         return (
             <div classname="container">
@@ -49,6 +50,8 @@ export default class Product extends Component {
                 <br /><br /><br />
                 <Pagination />
             </div>
+
+
         );
     }
 }

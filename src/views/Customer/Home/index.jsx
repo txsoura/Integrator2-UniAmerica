@@ -40,7 +40,7 @@ function Index() {
                 </a>
             </div>
 
-            <div className="container" bg-light>
+            <div className="container" >
                 <h3 className="title text-center" style={{ marginTop: 30 }}>Promoções</h3>
 
                 <div className="row">

@@ -12,7 +12,7 @@ export default class Index extends Component {
                 <div className="auth-wrapper">
                     <div className="auth-inner">
                         <form>
-                            <img src="https://static.vecteezy.com/system/resources/previews/000/425/737/non_2x/delivery-man-with-box-postman-design-isolated-on-white-background-courier-in-hat-and-uniform-with-package-vector.jpg" height="340" width="340" alt="" /><br/><br/>
+                            <img src="https://static.vecteezy.com/system/resources/previews/000/425/737/non_2x/delivery-man-with-box-postman-design-isolated-on-white-background-courier-in-hat-and-uniform-with-package-vector.jpg" height="340" width="340" alt="" /><br /><br />
 
                             <Input
                                 type="email"
@@ -29,7 +29,7 @@ export default class Index extends Component {
                                 class="form-control"
                             />
                             <Button name="ENTRAR" />
-                           
+
                             <h3>            ou                  </h3>
                             <button name="ENTRAR COM CELULAR" />
                         </form>
