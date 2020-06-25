@@ -19,9 +19,9 @@ function Index() {
                     <p class="card-text">R. Othon Maeder, 550 - Vila Yolanda - PR - Foz do Iguaçu/PR - PISO SUPERIOR</p>
                     <div>
                         <hr />
-                        <OrderItem merchant="comerciante de sumos" date="13/06/2020 13:45" name="tang 3ml" description="para misturar com 1L de aguá" href="/cart" class="btn btn-primary" text="pedir novamente" />
+                        <OrderItem merchant="comerciante de sumos" date="13/06/2020 13:45" name="tang 3ml" description="para misturar com 1L de aguá" href="/app/cart" class="btn btn-primary" text="pedir novamente" />
                         <br />
-                        <OrderItem merchant="comerciante de referscos" date="13/03/2020 13:45" name="coca cola 300ml" description="bem gelada" href="/cart" class="btn btn-primary" text="pedir novamente" />
+                        <OrderItem merchant="comerciante de referscos" date="13/03/2020 13:45" name="coca cola 300ml" description="bem gelada" href="/app/cart" class="btn btn-primary" text="pedir novamente" />
                     </div>
                 </div>
 
