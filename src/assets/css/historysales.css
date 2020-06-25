@@ -1,0 +1,29 @@
+.card{
+    margin-top: 100px;
+    height: 100px;
+    width: 100%;
+}
+
+.card-img{
+    margin-top: 10px;
+    margin-right: 1000px;
+    width: 50px;
+    height: 50px;
+}
+
+.card-title{
+    margin-top: -70px;
+}
+
+.card-text{
+    margin-top: 5px;
+}
+
+.card-text2{
+    margin-top: -10px; 
+}
+
+.card-link{
+    margin-top: 50px;
+}
+
