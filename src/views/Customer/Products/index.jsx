@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Card from "components/card/index";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Pagination from 'components/Pagination';
+// import Pagination from 'components/pagination/index';
+import "./index.css";
 
-export default class Product extends Component {
+
+export default class Index extends Component {
     render() {
         return (
             <div classname="container">
@@ -24,6 +26,8 @@ export default class Product extends Component {
                         name="Coca-Cola 2l"
                         price="Por: R$ 8,90"
                         href="Detalhes"
+                        text="Adicione"
+                        class="btn btn-primary"
 
                     />
                     <Card
@@ -31,17 +35,23 @@ export default class Product extends Component {
                         name="Agua 1.5 l"
                         price="Por: R$ 2,19"
                         href="Detalhes"
+                        text="Adicione"
+                        class="btn btn-primary"
                     />
                     <Card
                         img="https://http2.mlstatic.com/essncia-para-narguile-zomo-strong-red-50g-D_NQ_NP_875141-MLB31704627550_082019-O.webp"
                         name="Essência Para Narguile 50g"
                         price="Por: R$ 19,25"
                         href="Detalhes"
+                        text="Adicione"
+                        class="btn btn-primary"
                     />
                 </div>
                 <br /><br /><br />
-                <Pagination />
+                {/* <Pagination /> */}
             </div>
+
+
         );
     }
 }

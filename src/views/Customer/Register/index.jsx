@@ -2,10 +2,11 @@ import React, { Component } from "react";
 import Input from "components/input/index";
 import Button from "components/button/index";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css"
 
 
 
-export default class SignUp extends Component {
+export default class Index extends Component {
     render() {
         return (
             <div className="app">
@@ -52,4 +53,3 @@ export default class SignUp extends Component {
         );
     }
 }
-

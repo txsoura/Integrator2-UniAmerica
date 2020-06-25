@@ -1,16 +1,15 @@
-import React, { Component } from 'react'
+import React from 'react'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Button from 'components/button/index';
 
-export default class Product extends Component {
-    render() {
-        return (
-          <div className="container">
-              <div style={{color:"red", marginTop:"130px"}}>                  
-                <div class="card mb-3 text-center" style={{maxWidth: "840px"}}>
+function Index() {
+    return (
+        <div className="container">
+            <div style={{ color: "red", marginTop: "130px" }}>
+                <div class="card mb-3 text-center" style={{ maxWidth: "840px" }}>
                     <div class="row no-gutters">
                         <div class="col-md-4 text-center">
-                            <img src="https://d3o3bdzeq5san1.cloudfront.net/7/6589.jpg" class="card-img" alt="..."/>
+                            <img src="https://d3o3bdzeq5san1.cloudfront.net/7/6589.jpg" class="card-img" alt="..." />
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -23,8 +22,10 @@ export default class Product extends Component {
                         </div>
                     </div>
                 </div>
-              </div>
-        </div>  
-        );
-    }
+            </div>
+        </div>
+    );
+
 }
+
+export default Index;

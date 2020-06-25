@@ -8,17 +8,18 @@ import Status from "./views/Customer/Status/index";
 import Orders from "./views/Customer/Orders/index";
 import Order from "./views/Customer/Order/index";
 import OrderStatus from "./views/Customer/OrderStatus/index";
-import HistorySales from "./views/Customer/HistorySales/index";
-import Login from "./components/Form/Login/index";
-import Signup from "./components/Form/Sign-up/index";
-import ListaProdutos from "./components/ProductList/index";
-import Entregador from "./components/Form/Entregador/index";
-import Recuperar from "./components/Form/Recuperarsenha/index";
+import Login from "./views/Customer/Login/index";
+import Register from "./views/Customer/Register/index";
+import DriverLogin from "./views/Driver/Login/index";
+import Password from "./views/Customer/Password/index";
 import { isAuthenticated } from "auth";
-import Product from "views/Customer/Product";
-import Perfil from "views/Customer/Profile";
+import Product from "./views/Customer/Product/index";
+import Message from "./views/Customer/Message/index";
+import Profile from "./views/Customer/Profile/index";
+import MerchantProfile from "./views/Merchant/Profile/index";
+import Products from "./views/Customer/Products/index";
 
-const PrivateRoute = ({ component: Component, ...rest }) => (
+const CustomerRoute = ({ component: Component, ...rest }) => (
     <Route{...rest} render={props => (
         isAuthenticated() ? (
             <Component{...props} />
@@ -33,24 +34,25 @@ export default (props) => (
     <BrowserRouter>
         <div style={{ marginBottom: 68, marginTop: 70 }}>
             <Switch>
-                <Route path="/" exact={true} component={Landing} />
-                <PrivateRoute path="/app/cart" component={Cart} />
-                <PrivateRoute path="/app/checkout" component={Checkout} />
-                <PrivateRoute path="/app/orders" component={Orders} />
-                <PrivateRoute path="/app/order/status" component={OrderStatus} />
-                <PrivateRoute path="/app/order" component={Order} />
-                <PrivateRoute path="/app/historysales" component={HistorySales} />
-                <PrivateRoute path="/app/home" component={Home} />
-                <PrivateRoute path="/app/product" component={Product} />
-                <PrivateRoute path="/app/profile" component={Perfil} />
+                <CustomerRoute path="/app/cart" component={Cart} />
+                <CustomerRoute path="/app/checkout" component={Checkout} />
+                <CustomerRoute path="/app/orders" component={Orders} />
+                <CustomerRoute path="/app/order/status" component={OrderStatus} />
+                <CustomerRoute path="/app/order" component={Order} />
+                <CustomerRoute path="/app" exact={true} component={Home} />
+                <CustomerRoute path="/app/message" component={Message} />
+                <CustomerRoute path="/app/product" component={Product} />
+                <CustomerRoute path="/app/profile" component={Profile} />
+                <CustomerRoute path="/app/products" component={Products} />
 
-                <Route path="/products/ListaProdutos" component={ListaProdutos} />
-
-                <Route path="/driver/entregador" component={Entregador} />
+                <CustomerRoute path="/driver/login" component={DriverLogin} />
+                <CustomerRoute path="/merchant/profile" component={MerchantProfile} />
+                <CustomerRoute path="/" exact={true} component={Landing} />
+                <CustomerRoute path="*" component={Status} />
 
                 <Route path="/auth/Login" component={Login} />
-                <Route path="/auth/register" component={Signup} />
-                <Route path="/auth/password" component={Recuperar} />
+                <Route path="/auth/register" component={Register} />
+                <Route path="/auth/password" component={Password} />
 
                 <Route path="*" component={Status} />
 
