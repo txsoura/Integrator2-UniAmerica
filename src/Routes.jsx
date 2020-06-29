@@ -50,12 +50,12 @@ export default (props) => (
                 <CustomerRoute path="/merchant/profile" component={MerchantProfile} />
                 <CustomerRoute path="/merchant/orders" component={MerchantOrders} />
                 <CustomerRoute path="/" exact={true} component={Landing} />
+
+                <CustomerRoute path="/auth/Login" component={Login} />
+                <CustomerRoute path="/auth/register" component={Register} />
+                <CustomerRoute path="/auth/password" component={Password} />
+
                 <CustomerRoute path="*" component={Status} />
-
-                <Route path="/auth/Login" component={Login} />
-                <Route path="/auth/register" component={Register} />
-                <Route path="/auth/password" component={Password} />
-
                 <Route path="*" component={Status} />
 
             </Switch>
